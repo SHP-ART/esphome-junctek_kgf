@@ -89,7 +89,7 @@ void JuncTekKGF::handle_settings(const char* buffer)
   // Save the capacity for calculating the %
   this->battery_capacity_ = batteryAmpHourCapacity;
 
-  this->last_settings_ = millis();
+  this->last_settings_ = esphome::millis();
 }
 
 void JuncTekKGF::handle_status(const char* buffer)
